@@ -614,13 +614,13 @@ const GooglePlacesAutocomplete = React.createClass({
 
   _renderRow(rowData = {}, sectionID, rowID) {
     return (
-      <ScrollView
-        style={{ flex: 1 }}
-        scrollEnabled={this.props.isRowScrollable}
-        keyboardShouldPersistTaps={this.props.keyboardShouldPersistTaps}
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}
-        showsVerticalScrollIndicator={false}>
+      // <ScrollView
+      //   style={{ flex: 1 }}
+      //   scrollEnabled={this.props.isRowScrollable}
+      //   keyboardShouldPersistTaps={this.props.keyboardShouldPersistTaps}
+      //   horizontal={true}
+      //   showsHorizontalScrollIndicator={false}
+      //   showsVerticalScrollIndicator={false}>
         <TouchableHighlight
           style={{ minWidth: WINDOW.width }}
           onPress={() => this._onPress(rowData)}
@@ -631,7 +631,7 @@ const GooglePlacesAutocomplete = React.createClass({
             {this._renderLoader(rowData)}
           </View>
         </TouchableHighlight>
-      </ScrollView>
+      // </ScrollView>
     );
   },
 
